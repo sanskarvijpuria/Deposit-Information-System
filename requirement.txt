@@ -1,0 +1,5 @@
+num2words
+pandas
+st_annotated_text
+babel
+streamlit
