@@ -2,7 +2,7 @@ from num2words import num2words
 import streamlit as st
 from annotated_text import annotated_text
 import pandas as pd
-from babel.numbers import format_currency
+from babel.numbers import format_currency, format_decimal
 
 
 st.set_page_config(page_title= "Deposit Information", layout='wide', initial_sidebar_state='collapsed')
@@ -54,6 +54,7 @@ def amount(number_of_notes,denominations=denominations):
 #Calling both the functions
 number_of_notes=number_of_notes()
 sum=amount(number_of_notes)
+amount_list= [format_decimal(i, locale='en_IN') for i in amount_list]
 
 # Right column
 with right_column_1:
