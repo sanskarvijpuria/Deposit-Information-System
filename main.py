@@ -10,7 +10,7 @@ st.title("Deposit Information")
 st.header("Deposit Slip Information Filling System")
 
 
-denominations=[2000,500,200,100,50,20,10]
+denominations=[2000,500,200,100,50,20,10,5]
 
 # Dividing things in two columns
 left_column_1, right_column_1 = st.beta_columns(2)
